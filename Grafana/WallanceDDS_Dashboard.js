@@ -26,7 +26,7 @@ dashboard =
   "panels": [
     {
       "columns": [],
-      "datasource": "MySQL",
+      "datasource": "MySQLWALLANCEDDS",
       "description": "Pending Consensus Responses",
       "fontSize": "100%",
       "gridPos": {
@@ -104,7 +104,7 @@ dashboard =
     },
     {
       "columns": [],
-      "datasource": "MySQL",
+      "datasource": "MySQLWALLANCEDDS",
       "description": "List of Available Smart Contracts",
       "fontSize": "100%",
       "gridPos": {
@@ -208,7 +208,7 @@ dashboard =
     },
     {
       "columns": [],
-      "datasource": "MySQL",
+      "datasource": "MySQLWALLANCEDDS",
       "description": "Pending Request Transactions of $Node",
       "fontSize": "100%",
       "gridPos": {
@@ -304,7 +304,7 @@ dashboard =
         "rgb(28, 197, 80)",
         "rgb(28, 197, 80)"
       ],
-      "datasource": "MySQL",
+      "datasource": "MySQLWALLANCEDDS",
       "decimals": null,
       "description": "DCoins of $Node",
       "format": "none",
@@ -428,7 +428,7 @@ dashboard =
           "text": "5",
           "value": "5"
         },
-        "datasource": "MySQL",
+        "datasource": "MySQLWALLANCEDDS",
         "definition": "SELECT 5 AS DCOIN_RATE",
         "hide": 2,
         "includeAll": false,
@@ -455,7 +455,7 @@ dashboard =
             ""
           ]
         },
-        "datasource": "MySQL",
+        "datasource": "MySQLWALLANCEDDS",
         "definition": "SELECT DISTINCT PUBLISHER FROM WALLET",
         "hide": 0,
         "includeAll": false,
@@ -480,7 +480,7 @@ dashboard =
           "text": "",
           "value": ""
         },
-        "datasource": "MySQL",
+        "datasource": "MySQLWALLANCEDDS",
         "definition": "SELECT DISTINCT NAME FROM SMARTCONTRACT",
         "hide": 0,
         "includeAll": false,
@@ -505,7 +505,7 @@ dashboard =
           "text": "2",
           "value": "2"
         },
-        "datasource": "MySQL",
+        "datasource": "MySQLWALLANCEDDS",
         "definition": "SELECT PRICE FROM SMARTCONTRACT WHERE NAME = '$SMC'",
         "hide": 2,
         "includeAll": false,
