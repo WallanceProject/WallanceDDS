@@ -11,7 +11,7 @@ In this tutorial, we will install step by step *WallanceDDS* Node (on Raspberry 
 
 ## Prerequisites
 
-- You need to have a Linux environment
+- A Linux environment
 - About 2GB is required
 - At least 3 Raspberry Pi are required
 - An internet connection is required
