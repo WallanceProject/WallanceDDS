@@ -1,0 +1,22 @@
+
+project(*DDS) : dcpsexe, dcps_tcp, dds_model {
+  requires += no_opendds_safety_profile
+  exename   = DDS.bin
+
+  includes += ../../SQLite3/
+  includes += ../Sensor/
+  includes += ../Consensus/
+
+  TypeSupport_Files {
+    DDS_modeles.idl
+  }
+
+  Source_Files {
+    DataReaderListenerImpl_sensor.cpp
+    DataReaderListenerImpl_consensus.cpp
+    ../../SQLite3/sqlite3.c
+    ../Consensus/SHA256.cpp
+    ../Consensus/Consensus.cpp
+    DDS.cpp
+  }
+}

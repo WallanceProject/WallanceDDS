@@ -1,0 +1,28 @@
+
+module DDS_modeles
+{
+
+#pragma DCPS_DATA_TYPE "DDS_modeles::sensor"
+#pragma DCPS_DATA_KEY "DDS_modeles::sensor publisher"
+
+  struct sensor {
+    string publisher;       // Publisher
+    string topic;           // Topic
+    long value;             // Value
+  };
+
+
+#pragma DCPS_DATA_TYPE "DDS_modeles::consensus"
+#pragma DCPS_DATA_KEY "DDS_modeles::consensus subscriber"
+
+  struct consensus {
+    string subscriber;      // Subscriber
+    string publisher;       // Publisher
+    string smartcontract;   // SmartContract
+    unsigned long price;    // Price
+    long time;              // Time
+    string prevstate;       // PrevState
+    long dcoin;             // DCoin
+    long nonce;             // Nonce
+  };
+};

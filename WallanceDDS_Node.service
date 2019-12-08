@@ -1,0 +1,14 @@
+[Unit]
+Description=WallanceDDS Node
+After=network-online.target
+
+[Service]
+ExecStart=/bin/bash /home/pi/WallanceDDS/Run_Node.sh
+WorkingDirectory=/home/pi/WallanceDDS/
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
