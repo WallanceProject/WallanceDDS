@@ -176,7 +176,7 @@ The text editor *Sublime Text* is available to edit the *WallanceDDS* source cod
 In a terminal on your **PC**:
 <pre><code>subl $HOME/WallanceProject/WallanceDDS</code></pre>
 
-### Compile *WallanceDDS* & Update *WallanceDDS* Node (Raspberry)
+### Compile *WallanceDDS*
 
 In a terminal on your **PC**:
 <pre><code>cd $HOME/WallanceProject/WallanceDDS
