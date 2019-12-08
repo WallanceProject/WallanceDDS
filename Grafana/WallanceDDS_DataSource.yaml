@@ -6,12 +6,12 @@ apiVersion: 1
 
 # Delete Previous Data Source
 deleteDatasources:
-- name: MySQL
+- name: MySQLWALLANCEDDS
   orgId: 1
 
 # Create New Datasource
 datasources:
-- name: MySQL
+- name: MySQLWALLANCEDDS
   type: mysql
   url: localhost:3306
   database: WALLANCEDDS
