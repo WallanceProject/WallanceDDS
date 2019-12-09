@@ -18,13 +18,13 @@ sed -i "s/multicast_interface=.*./multicast_interface=$MyInterface/g" Grafana/rt
 # Init Grafana Server
 if [ $(service grafana-server status | grep Active | awk '{print $2}') == "inactive" ]
 then
-	service grafana-server restart
+	sudo service grafana-server restart
 fi
 
 # Init MYSQL
 if [ $(service mysql status | grep Active | awk '{print $2}') == "inactive" ]
 then
-	service mysql restart
+	sudo service mysql restart
 fi
 
 # Set Shared Libraries
