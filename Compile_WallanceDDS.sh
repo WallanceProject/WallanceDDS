@@ -163,8 +163,8 @@ echo "sudo mv WallanceDDS_Node.service /etc/systemd/system/" >> Install_Wallance
 echo "sudo systemctl daemon-reload" >> Install_WallanceDDS_Node.sh
 echo "sudo rm -f -R WallanceDDS && mkdir WallanceDDS" >> Install_WallanceDDS_Node.sh
 echo "mv Run_Node.sh Consensus OpenDDS SmartContract Sensor Pipes WallanceDDS" >> Install_WallanceDDS_Node.sh
-echo "rm WallanceDDS_Node.zip" >> Install_WallanceDDS_Node.sh
-echo "rm Install_WallanceDDS_Node.sh" >> Install_WallanceDDS_Node.sh
+echo "rm -f WallanceDDS_Node.zip" >> Install_WallanceDDS_Node.sh
+echo "rm -f Install_WallanceDDS_Node.sh" >> Install_WallanceDDS_Node.sh
 chmod +x Install_WallanceDDS_Node.sh
 zip -u WallanceDDS_Node.zip Install_WallanceDDS_Node.sh
 rm Install_WallanceDDS_Node.sh
